@@ -182,12 +182,16 @@ header {
 .skills-title h2 {
     text-align: center;
     color:var(--cor-destaque);
+
+    animation: opacity 3s;
 }
 
 .linha {
     border: solid 1px var(--cor-destaque);
     height: 0;
     width: 40%;
+
+    animation: anima-skills-title 4s;
 }
 
 .skills-options-container {
@@ -201,14 +205,18 @@ header {
 }
 
 .skills-options {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 
     width: 95%;
+}
 
-    justify-content: space-between;
-    align-items: center;
+@media (max-width: 1374px) {
+    .skills-options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 30px;
+    }
 }
 
 .skill-option {
@@ -235,6 +243,26 @@ header {
     background-color: #D9D9D9;
 }
 
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes anima-skills-title {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
 @keyframes anima-in {           
     0% {           
         transform: translateY(-20px);           
@@ -244,4 +272,4 @@ header {
         transform: translateY(0);           
         opacity: 1;           
     }           
-}   
+}
