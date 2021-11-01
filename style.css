@@ -190,8 +190,10 @@ header {
     border: solid 1px var(--cor-destaque);
     height: 0;
     width: 40%;
+    visibility: hidden;
 
     animation: anima-skills-title 4s;
+    animation-play-state: paused;
 }
 
 .skills-options-container {
@@ -211,18 +213,23 @@ header {
     width: 95%;
 }
 
-@media (max-width: 1374px) {
-    .skills-options {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 30px;
-    }
-}
 
 .skill-option {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-bottom: 30px;
+    
+    animation: icons-scale 3s;
+    animation-play-state: paused;
+}
+
+@media (max-width: 1374px) {
+    .skills-options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .skill-img {
@@ -272,4 +279,16 @@ header {
         transform: translateY(0);           
         opacity: 1;           
     }           
+}
+
+@keyframes icons-scale {
+    0% {
+        opacity: 0;
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
