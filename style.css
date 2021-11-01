@@ -11,7 +11,7 @@
 :root {
     --cor-fundo: #000E41;
     --cor-contraste: #EBEBEB;
-    --cor-destaque: #4CFFB4;
+    --cor-destaque: rgb(76, 255, 180);
     --cor-complementar: #0085FF;
 }
 
@@ -22,6 +22,16 @@ body {
 header {
     display: flex;
     justify-content: center;
+
+    position: fixed;
+    width: 100%;
+
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+
+    background-color: rgba(0, 14, 65, .8);
+
+    z-index: 3;
 
     border-bottom: solid 1px var(--cor-destaque);
 }
@@ -35,9 +45,21 @@ header {
 
 .header-option {
     margin: 0 5px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 /* QUEM SOU */
+
+.quem-sou-container {
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
 .quem-sou {
     display: flex;
     flex-direction: column;
@@ -45,28 +67,56 @@ header {
     align-items: center;
 
     margin: 70px;
+}
 
+.quem-sou-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 618px;
+}
+
+.quem-sou-texto p:nth-child(2) {
+    animation: anima-in 3s;
+}
+
+.quem-sou-texto p:nth-child(3) {
+    animation: anima-in 3.5s;
+}
+
+.quem-sou-texto p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.quem-sou-texto h2 {
+    color: var(--cor-destaque);
+    
+    animation: anima-in 2s;
 }
 
 .foto-container {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-
+    
     border: solid 8px var(--cor-destaque);
-
+    
     overflow: hidden;
+    
+    animation: anima-in 2s;
 
     display: grid;
-    place-items: center;           
-    animation: anima-in 2s;           
+    place-items: center;
 }      
 
 .foto {           
     width: 95%;           
     height: 95%;           
     border-radius: 50%;           
-    overflow: hidden;           
+    overflow: hidden;
 } 
 
 .foto img {           
@@ -79,9 +129,21 @@ header {
     text-align: center;
 }
 
-@media (min-width: 560px) {
+
+@media (min-width: 650px) {
     .textos {
         width: 618px;
+    }
+}
+
+@media (min-width: 1374px) {
+    .quem-sou {
+        justify-content: left;
+        align-items: unset;
+    }
+
+    .textos {
+        text-align: left;
     }
 }
 
