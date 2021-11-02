@@ -6,6 +6,7 @@
     color: white;
 
     font-family: 'Roboto', sans-serif;
+
 }
 
 :root {
@@ -259,7 +260,7 @@ header {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .skill-img {
         width: 80px;
         height: 80px;
@@ -267,6 +268,10 @@ header {
 
     .skill-option h3 {
         font-size: .9rem;
+    }
+
+    .skills-container {
+        margin: 0 10px;
     }
 }
 
