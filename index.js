@@ -6,8 +6,6 @@ window.addEventListener('scroll', () => {
     const windowTop = window.pageYOffset + window.innerHeight*3/4
     const skillsTop = skillTitle.offsetTop
 
-    console.log(windowTop + " e " + skillsTop)
-
     if (windowTop > skillsTop) {
         animaSkills()
     }
