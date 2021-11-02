@@ -118,7 +118,14 @@ header {
     height: 95%;           
     border-radius: 50%;           
     overflow: hidden;
-} 
+}
+
+@media (max-width: 550px) {
+    .foto-container {
+        width: 250px;
+        height: 250px;
+    }
+}
 
 .foto img {           
     width: 100%;           
