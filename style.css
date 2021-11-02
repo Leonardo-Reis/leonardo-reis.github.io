@@ -208,6 +208,7 @@ header {
 
 .skills-options {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(6, 1fr);
 
     width: 95%;
@@ -233,8 +234,8 @@ header {
 }
 
 .skill-img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
 
     border-radius: 5px;
     overflow: hidden;
@@ -243,7 +244,7 @@ header {
 }
 
 .skill-img img {
-    width: 120px;
+    width: 110px;
 }
 
 .skills-options .skill-option:last-child .skill-img img {
