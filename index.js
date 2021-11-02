@@ -9,19 +9,20 @@ window.addEventListener('scroll', () => {
     console.log(windowTop + " e " + skillsTop)
 
     if (windowTop > skillsTop) {
-        console.log('animou')
-
-        icons.forEach((icon, n) => {
-            setTimeout(() => {
-                icon.style.animationPlayState = "running"
-            }, 250*n)
-        })
-
-        linhas.forEach((linha) => {
-            linha.style.visibility = "visible"
-            linha.style.animationPlayState = "running"
-        })
-
+        animaSkills()
     }
     
 })
+
+const animaSkills = () => {
+    icons.forEach((icon, n) => {
+        setTimeout(() => {
+            icon.style.animationPlayState = "running"
+        }, 250*n)
+    })
+
+    linhas.forEach((linha) => {
+        linha.style.visibility = "visible"
+        linha.style.animationPlayState = "running"
+    })
+}

@@ -247,7 +247,7 @@ header {
     width: 110px;
 }
 
-.skills-options .skill-option:last-child .skill-img img {
+.skills-options .skill-option:nth-child(5) .skill-img img {
     background-color: #D9D9D9;
 }
 
