@@ -3,9 +3,12 @@ const skillTitle = document.querySelector(".skills-title")
 const linhas = document.querySelectorAll(".linha")
 
 window.addEventListener('scroll', () => {
-    const windowTop = window.pageYOffset*3/4
+    const windowTop = window.pageYOffset + window.innerHeight*3/4
+    const skillsTop = skillTitle.offsetTop
 
-    if (windowTop) {
+    console.log(windowTop + " e " + skillsTop)
+
+    if (windowTop > skillsTop) {
         console.log('animou')
 
         icons.forEach((icon, n) => {
