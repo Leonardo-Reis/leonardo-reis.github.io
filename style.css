@@ -240,7 +240,7 @@ header {
 }
 
 .skill-img img {
-    width: 110px;
+    width: 100%;
 }
 
 .skills-options .skill-option:nth-child(5) .skill-img img {
@@ -257,9 +257,16 @@ header {
         width: 100px;
         height: 100px;
     }
+}
 
-    .skill-img img {
-        width: 100px;
+@media (max-width: 450px) {
+    .skill-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill-option h3 {
+        font-size: .9rem;
     }
 }
 
