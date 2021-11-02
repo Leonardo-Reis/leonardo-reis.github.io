@@ -137,6 +137,10 @@ header {
     text-align: center;
 }
 
+.textos p:first-child {
+    white-space: nowrap;
+}
+
 
 @media (min-width: 650px) {
     .textos {
