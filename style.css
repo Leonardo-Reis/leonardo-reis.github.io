@@ -6,7 +6,6 @@
     color: white;
 
     font-family: 'Roboto', sans-serif;
-
 }
 
 :root {
@@ -117,12 +116,18 @@ header {
     place-items: center;
 }      
 
-.foto {           
+.foto {
     width: 95%;           
     height: 95%;           
     border-radius: 50%;           
     overflow: hidden;
 }
+
+
+.foto img {           
+    width: 100%;           
+    height: 100%;           
+}         
 
 @media (max-width: 550px) {
     .foto-container {
@@ -130,11 +135,6 @@ header {
         height: 250px;
     }
 }
-
-.foto img {           
-    width: 100%;           
-    height: 100%;           
-}         
 
 .textos {           
     margin-top: 28px;           
