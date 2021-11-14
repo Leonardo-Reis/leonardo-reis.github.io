@@ -45,7 +45,7 @@ header {
 
 .header-option {
     margin: 0 5px;
-    font-weight: bolder;
+    font-weight: 400;
 }
 /* QUEM SOU */
 
@@ -91,6 +91,7 @@ header {
 .quem-sou-texto p {
     margin: 10px;
     font-size: 20px;
+    font-weight: 300;
 }
 
 .quem-sou-texto h2 {
@@ -98,6 +99,8 @@ header {
     
     animation: anima-in 2s;
     animation-play-state: paused;
+
+    font-weight: 400;
 }
 
 .foto-container {
@@ -173,7 +176,7 @@ header {
 .textos p:nth-child(1) {
     font-size: 36px;
     margin-bottom: 15px;
-    font-weight: bold;
+    font-weight: 500;
 
     animation: anima-in 2s;
     animation-play-state: paused;
