@@ -13,6 +13,7 @@
     --cor-contraste: #EBEBEB;
     --cor-destaque: rgb(76, 255, 180);
     --cor-complementar: #0085FF;
+    --cor-destaque-texto: #97FFD3;
 }
 
 body {
@@ -45,7 +46,8 @@ header {
 
 .header-option {
     margin: 0 5px;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: 'Roboto Slab';
 }
 /* QUEM SOU */
 
@@ -69,38 +71,41 @@ header {
     margin: 70px;
 }
 
-.quem-sou-texto {
+.quem-sou-texto-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
+    position: relative;
 
     width: 618px;
 }
 
-.quem-sou-texto p:nth-child(2) {
+.quem-sou-texto-ps p:nth-child(1) {
     animation: anima-in 2s;
     animation-play-state: paused;
 }
 
-.quem-sou-texto p:nth-child(3) {
+.quem-sou-texto-ps p:nth-child(2) {
     animation: anima-in 2s;
     animation-play-state: paused;
 }
 
-.quem-sou-texto p {
-    margin: 10px;
+.quem-sou-texto-container p {
+    margin: 15px 0;
     font-size: 20px;
     font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
 }
 
-.quem-sou-texto h2 {
+.quem-sou-texto-container h2 {
     color: var(--cor-destaque);
     
     animation: anima-in 2s;
     animation-play-state: paused;
 
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .foto-container {
@@ -184,8 +189,9 @@ header {
 
 
 
-.textos p span {
-    color: var(--cor-destaque);
+p span {
+    color: var(--cor-destaque-texto);
+    font-weight: 500;
 }
 
 /* SKILLS */
