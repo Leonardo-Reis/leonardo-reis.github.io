@@ -146,7 +146,7 @@ header {
 
 .textos {           
     margin-top: 28px;           
-    text-align: center;
+    text-align: left;
 }
 
 .textos p:first-child {
@@ -154,8 +154,23 @@ header {
 }
 
 
+@media (max-width: 650px) {
+    .quem-sou-texto-container {
+        width: 550px;
+    }
+
+    .textos {
+        width: 550px;
+    }
+}
+
+
 @media (min-width: 650px) {
     .textos {
+        width: 618px;
+    }
+
+    .quem-sou-texto-container {
         width: 618px;
     }
 }
