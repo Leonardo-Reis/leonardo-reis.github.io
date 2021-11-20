@@ -66,7 +66,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 
     margin: 70px;
 }
@@ -155,12 +155,13 @@ header {
 
 
 @media (max-width: 650px) {
-    .quem-sou-texto-container {
-        width: 550px;
+    .quem-sou {
+        width: 90%;
+        margin: 50px 0;
     }
 
-    .textos {
-        width: 550px;
+    .quem-sou-texto-container {
+        width: 90%;
     }
 }
 
