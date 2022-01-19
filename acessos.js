@@ -3,7 +3,7 @@ const storage = localStorage.getItem('id')
 if (storage === null) {
     console.log('nunca tinha entrado')
 
-    uuidReq = fetch('https://api.leonardo-reis.com/return-id')
+    uuidReq = fetch('https://www.api.leonardo-reis.com/return-id')
     .then(response => {
         return response.json()
     }).then(jsonBody => {
@@ -13,7 +13,7 @@ if (storage === null) {
             "uuid": jsonBody.uuid
         }
     
-        const unicoReq = fetch('https://api.leonardo-reis.com/add-acesso-unico', header= {
+        const unicoReq = fetch('https://www.api.leonardo-reis.com/add-acesso-unico', header= {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -30,7 +30,7 @@ if (storage === null) {
         "uuid": uuid
     }
 
-    geralReq = fetch('https://api.leonardo-reis.com/add-acesso-geral',
+    geralReq = fetch('https://www.api.leonardo-reis.com/add-acesso-geral',
     headers= {
         method: "POST",
         headers: {
